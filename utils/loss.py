@@ -15,6 +15,6 @@ def dice_coef(y_true, y_pred, epsilon=0.00001):
     return K.mean((dice_numerator)/(dice_denominator))
 
 
-def dice_coef_loss(y_true, y_pred, hyper_coef=10):
+def dice_coef_loss(y_true, y_pred):
     
-    return 1-dice_coef(y_true, y_pred) + hyper_coef*mse(y_true, y_pred)
+    return 1-dice_coef(y_true, y_pred)
