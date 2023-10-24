@@ -4,7 +4,7 @@
 ### Function
 * normalize()
   * input_array: numpy.array() or array-like. 
-* get_random()
+* get_random()  
   This function is one kind of generator. That means the image will not be read until the program calls for data. Just put the image and label data in a different folder.
   * name_list: list. Image file name list
   * image_path
